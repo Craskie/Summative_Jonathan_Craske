@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".British">
+
+    <TextView
+        android:id="@+id/BritishTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="16dp"
+        android:text="WORLD MUSEUMS"
+        android:textColor="#070505"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BritishHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="21dp"
+        android:text="British Museum"
+        android:textColor="#050101"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BritishTitle" />
+
+    <ImageView
+        android:id="@+id/BritishIMG"
+        android:layout_width="190dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="47dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BritishHeading"
+        app:srcCompat="@drawable/british_museum" />
+
+    <TextView
+        android:id="@+id/txtBritish"
+        android:layout_width="180dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="48dp"
+        android:text="The British Museum is located in London, United Kingdom and is a public institution dedicated to human history, art and culture."
+        android:textColor="#090303"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/BritishIMG"
+        app:layout_constraintTop_toBottomOf="@+id/BritishHeading" />
+
+    <TextView
+        android:id="@+id/britishTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="16dp"
+        android:text="TICKET - £10"
+        android:textColor="#070606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBritish" />
+
+    <TextView
+        android:id="@+id/britishTimeSlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="64dp"
+        android:text="TIME SLOT"
+        android:textColor="#070606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBritish" />
+
+    <TextView
+        android:id="@+id/britishTicketQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="256dp"
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="64dp"
+        android:text="TICKET QUANTITY"
+        android:textColor="#070606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBritish" />
+
+    <Button
+        android:id="@+id/ticketBritish"
+        android:layout_width="199dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="23dp"
+        android:text="BUY TICKET(S)"
+        app:layout_constraintStart_toEndOf="@+id/BritishTimeSlots"
+        app:layout_constraintTop_toBottomOf="@+id/BritishQTY" />
+
+    <Button
+        android:id="@+id/goBackBritish"
+        android:layout_width="132dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
+        android:onClick="MuseumListFun"
+        android:text="GO BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BritishTimeSlots" />
+
+    <Button
+        android:id="@+id/shopBritish"
+        android:layout_width="141dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="40dp"
+        android:onClick="ShopFun"
+        android:text="SHOP"
+        app:layout_constraintStart_toEndOf="@+id/goBackBritish"
+        app:layout_constraintTop_toBottomOf="@+id/ticketBritish" />
+
+    <EditText
+        android:id="@+id/BritishQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/BritishTimeSlots"
+        app:layout_constraintTop_toBottomOf="@+id/britishTicketQTY" />
+
+    <RadioGroup
+        android:id="@+id/BritishTimeSlots"
+        android:layout_width="120dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/britishTimeSlot">
+
+        <RadioButton
+            android:id="@+id/BritishTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="18dp"
+            android:onClick="checkButton"
+            android:text="9 - 11am" />
+
+        <RadioButton
+            android:id="@+id/BritishTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:onClick="checkButton"
+            android:text="11 - 1pm" />
+
+        <RadioButton
+            android:id="@+id/BritishTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:onClick="checkButton"
+            android:text="1 - 3pm" />
+
+        <RadioButton
+            android:id="@+id/BritishTime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:onClick="checkButton"
+            android:text="3 - 5pm" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NaturalHistory">
+
+    <TextView
+        android:id="@+id/NatHistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="16dp"
+        android:text="WORLD MUSEUMS"
+        android:textColor="#050000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NatHistoryHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="16dp"
+        android:text="Natural History Museum"
+        android:textColor="#070606"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NatHistoryTitle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NatHistoryHeading"
+        app:srcCompat="@drawable/nat_history" />
+
+    <TextView
+        android:id="@+id/txtNatHistory"
+        android:layout_width="174dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:text="The Natural History Museum is located in London, United Kingdom and is home to a vast range of specimens from various segments of natural history."
+        android:textColor="#0E0707"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/NatHistoryHeading" />
+
+    <TextView
+        android:id="@+id/txtTicketNatHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="26dp"
+        android:text="TICKET - £5"
+        android:textColor="#050101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNatHistory" />
+
+    <TextView
+        android:id="@+id/txtTicketQTYNatHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginLeft="248dp"
+        android:layout_marginTop="60dp"
+        android:text="TICKET QUANTITY"
+        android:textColor="#050101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNatHistory" />
+
+    <TextView
+        android:id="@+id/txtTimeSlotNatHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="60dp"
+        android:text="TIME SLOT"
+        android:textColor="#050101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNatHistory" />
+
+    <Button
+        android:id="@+id/ticketNatHistory"
+        android:layout_width="214dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="36dp"
+        android:text="BUY TICKET(S)"
+        app:layout_constraintStart_toEndOf="@+id/NatHistoryTimeSlots"
+        app:layout_constraintTop_toBottomOf="@+id/NatHistoryQTY" />
+
+    <Button
+        android:id="@+id/goBackNatHistory"
+        android:layout_width="151dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="14dp"
+        android:onClick="MuseumListFun"
+        android:text="GO BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NatHistoryTimeSlots" />
+
+    <Button
+        android:id="@+id/shopNatHistory"
+        android:layout_width="151dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        android:onClick="ShopFun"
+        android:text="SHOP"
+        app:layout_constraintStart_toEndOf="@+id/goBackNatHistory"
+        app:layout_constraintTop_toBottomOf="@+id/ticketNatHistory" />
+
+    <EditText
+        android:id="@+id/NatHistoryQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTicketQTYNatHistory" />
+
+    <RadioGroup
+        android:id="@+id/NatHistoryTimeSlots"
+        android:layout_width="110dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimeSlotNatHistory">
+
+        <RadioButton
+            android:id="@+id/NatHistoryTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="22dp"
+            android:onClick="checkButton"
+            android:text="9 - 11am" />
+
+        <RadioButton
+            android:id="@+id/NatHistoryTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="checkButton"
+            android:text="11 - 1pm" />
+
+        <RadioButton
+            android:id="@+id/NatHistoryTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:onClick="checkButton"
+            android:text="1 - 3pm" />
+
+        <RadioButton
+            android:id="@+id/NatHistoryTime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:onClick="checkButton"
+            android:text="3 - 5pm" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vatican">
+
+    <TextView
+        android:id="@+id/VaticanHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:text="WORLD MUSEUMS"
+        android:textColor="#070606"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/VaticanTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:text="Vatican Museum"
+        android:textColor="#0C0B0B"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VaticanHeading" />
+
+    <ImageView
+        android:id="@+id/vaticanIMG"
+        android:layout_width="201dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VaticanTitle"
+        app:srcCompat="@drawable/vatican_museum" />
+
+    <TextView
+        android:id="@+id/vaticanTxt"
+        android:layout_width="167dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="The Vatican Musem is located in the Vatican City and displays the immense collection amassed by the Catholic Church and the papacy throughout the centuries."
+        android:textColor="#0B0A0A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VaticanTitle" />
+
+    <TextView
+        android:id="@+id/txtTicketVatican"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="276dp"
+        android:layout_marginLeft="276dp"
+        android:text="TICKET - £10"
+        android:textColor="#0B0B0B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaticanTxt" />
+
+    <TextView
+        android:id="@+id/timeSlotLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="28dp"
+        android:text="TICKET - £10"
+        android:textColor="#0B0B0B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaticanTxt" />
+
+    <TextView
+        android:id="@+id/ticketQTYLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="256dp"
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="28dp"
+        android:text="TICKET QUANTITY"
+        android:textColor="#0B0B0B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaticanTxt" />
+
+    <Button
+        android:id="@+id/ticketVatican"
+        android:layout_width="179dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="22dp"
+        android:text="BUY TICKET(S)"
+        app:layout_constraintStart_toEndOf="@+id/VaticanTimeSlots"
+        app:layout_constraintTop_toBottomOf="@+id/VaticanQTY" />
+
+    <Button
+        android:id="@+id/goBackVatican"
+        android:layout_width="151dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="3dp"
+        android:onClick="MuseumListFun"
+        android:text="GIFT SHOP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VaticanTimeSlots" />
+
+    <Button
+        android:id="@+id/shopVatican"
+        android:layout_width="156dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        android:onClick="ShopFun"
+        android:text="SHOP"
+        app:layout_constraintStart_toEndOf="@+id/goBackVatican"
+        app:layout_constraintTop_toBottomOf="@+id/ticketVatican" />
+
+    <EditText
+        android:id="@+id/VaticanQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/VaticanTimeSlots"
+        app:layout_constraintTop_toBottomOf="@+id/ticketQTYLabel" />
+
+    <RadioGroup
+        android:id="@+id/VaticanTimeSlots"
+        android:layout_width="122dp"
+        android:layout_height="202dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeSlotLabel">
+
+        <RadioButton
+            android:id="@+id/VaticanTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="14dp"
+            android:text="9 - 11am" />
+
+        <RadioButton
+            android:id="@+id/VaticanTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:text="11 - 1pm" />
+
+        <RadioButton
+            android:id="@+id/VaticanTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:text="1 - 3pm" />
+
+        <RadioButton
+            android:id="@+id/VaticanTime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:text="3 - 5pm" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

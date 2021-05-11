@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop">
+
+    <EditText
+        android:id="@+id/coasterQTY"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/coasterLabel"
+        app:layout_constraintTop_toBottomOf="@+id/mugQTY" />
+
+    <TextView
+        android:id="@+id/ShopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="16dp"
+        android:text="WORLD MUSEUMS"
+        android:textColor="#090808"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ShopHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="15dp"
+        android:text="Gift Shop"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShopTitle" />
+
+    <TextView
+        android:id="@+id/itemLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="120dp"
+        android:text="ITEM"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/QTYlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="24dp"
+        android:text="QUANTITY"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/itemLabel"
+        app:layout_constraintTop_toBottomOf="@+id/ShopHeading" />
+
+    <TextView
+        android:id="@+id/basketLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="73dp"
+        android:text="ADD TO BASKET"
+        android:textColor="#0B0A0A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/QTYlabel"
+        app:layout_constraintTop_toBottomOf="@+id/ShopTitle" />
+
+    <TextView
+        android:id="@+id/shirtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="23dp"
+        android:text="Shirt - £10"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemLabel" />
+
+    <TextView
+        android:id="@+id/hatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Hat - £5"
+        android:textColor="#070707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shirtLabel" />
+
+    <TextView
+        android:id="@+id/snowGlobeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Snow Globe - £5"
+        android:textColor="#0C0C0C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatLabel" />
+
+    <TextView
+        android:id="@+id/keyChainLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Key Chain - £5"
+        android:textColor="#070707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snowGlobeLabel" />
+
+    <TextView
+        android:id="@+id/coasterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Coaster - £2"
+        android:textColor="#0E0E0E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mugLabel" />
+
+    <TextView
+        android:id="@+id/mugLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Mug - £5"
+        android:textColor="#050505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BottleLabel" />
+
+    <TextView
+        android:id="@+id/BottleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Bottle - £5"
+        android:textColor="#070707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keyChainLabel" />
+
+    <EditText
+        android:id="@+id/mugQTY"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/mugLabel"
+        app:layout_constraintTop_toBottomOf="@+id/bottleQTY" />
+
+    <EditText
+        android:id="@+id/keyChainQTY"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/keyChainLabel"
+        app:layout_constraintTop_toBottomOf="@+id/snowGlobeQTY" />
+
+    <EditText
+        android:id="@+id/snowGlobeQTY"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/snowGlobeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/hatQTY" />
+
+    <EditText
+        android:id="@+id/bottleQTY"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/BottleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/keyChainQTY" />
+
+    <EditText
+        android:id="@+id/hatQTY"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/hatLabel"
+        app:layout_constraintTop_toBottomOf="@+id/shirtQTY" />
+
+    <EditText
+        android:id="@+id/shirtQTY"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/shirtLabel"
+        app:layout_constraintTop_toBottomOf="@+id/QTYlabel" />
+
+    <Button
+        android:id="@+id/coasterBuy"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="15dp"
+        android:onClick="coasterBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/coasterQTY"
+        app:layout_constraintTop_toBottomOf="@+id/mugBuy" />
+
+    <Button
+        android:id="@+id/mugBuy"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="7dp"
+        android:onClick="mugBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/mugQTY"
+        app:layout_constraintTop_toBottomOf="@+id/bottleBuy" />
+
+    <Button
+        android:id="@+id/bottleBuy"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="4dp"
+        android:onClick="bottleBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/bottleQTY"
+        app:layout_constraintTop_toBottomOf="@+id/keyChainBuy" />
+
+    <Button
+        android:id="@+id/keyChainBuy"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="10dp"
+        android:onClick="keyChainBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/keyChainQTY"
+        app:layout_constraintTop_toBottomOf="@+id/snowGlobeBuy" />
+
+    <Button
+        android:id="@+id/snowGlobeBuy"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="10dp"
+        android:onClick="snowGlobeBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/snowGlobeQTY"
+        app:layout_constraintTop_toBottomOf="@+id/hatBuy" />
+
+    <Button
+        android:id="@+id/hatBuy"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="14dp"
+        android:onClick="hatBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/hatQTY"
+        app:layout_constraintTop_toBottomOf="@+id/shirtBuy" />
+
+    <Button
+        android:id="@+id/shirtBuy"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="9dp"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/shirtQTY"
+        app:layout_constraintTop_toBottomOf="@+id/basketLabel"
+        android:onClick="shirtBuyFun"/>
+
+    <Button
+        android:id="@+id/cafeButton"
+        android:layout_width="127dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="77dp"
+        android:onClick="CafeFun"
+        android:text="CAFE"
+        app:layout_constraintStart_toEndOf="@+id/goBack"
+        app:layout_constraintTop_toBottomOf="@+id/coasterBuy" />
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="127dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="83dp"
+        android:onClick="MuseumFun"
+        android:text="Back To Museum LIST"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coasterLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

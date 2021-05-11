@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cafe">
+
+    <TextView
+        android:id="@+id/cafeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="16dp"
+        android:text="WORLD MUSEUMS"
+        android:textColor="#0B0A0A"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cafeHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginLeft="181dp"
+        android:layout_marginTop="17dp"
+        android:text="Cafe"
+        android:textColor="#0C0B0B"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cafeTitle" />
+
+    <TextView
+        android:id="@+id/cafeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="114dp"
+        android:text="ITEM"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cafeLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="16dp"
+        android:text="Quantity"
+        android:textColor="#0C0B0B"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/cafeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/cafeHeading" />
+
+    <TextView
+        android:id="@+id/cafeLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="66dp"
+        android:text="ADD TO BASKET"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/cafeLabel2"
+        app:layout_constraintTop_toBottomOf="@+id/cafeTitle" />
+
+    <TextView
+        android:id="@+id/sweetrollLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="37dp"
+        android:text="Sweet Roll - £2"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichLabel" />
+
+    <TextView
+        android:id="@+id/saladLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="38dp"
+        android:text="Salad - £2"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sweetrollLabel" />
+
+    <TextView
+        android:id="@+id/sandwichLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Sandwich - £2"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flatbreadLabel" />
+
+    <TextView
+        android:id="@+id/flatbreadLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="39dp"
+        android:text="Flatbread - £2"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeLabel" />
+
+    <TextView
+        android:id="@+id/coffeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Coffee - £2"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterLabel" />
+
+    <TextView
+        android:id="@+id/waterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Water - £1"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teaLabel" />
+
+    <TextView
+        android:id="@+id/teaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Tea - £1"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cafeLabel" />
+
+    <EditText
+        android:id="@+id/teaQTY"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/teaLabel"
+        app:layout_constraintTop_toBottomOf="@+id/cafeLabel2" />
+
+    <EditText
+        android:id="@+id/saladQTY"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sweetrollQTY" />
+
+    <EditText
+        android:id="@+id/sweetrollQTY"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichQTY" />
+
+    <EditText
+        android:id="@+id/sandwichQTY"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flatbreadQTY" />
+
+    <EditText
+        android:id="@+id/flatbreadQTY"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/flatbreadLabel"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeQTY" />
+
+    <EditText
+        android:id="@+id/coffeeQTY"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/coffeeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/waterQTY" />
+
+    <EditText
+        android:id="@+id/waterQTY"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/waterLabel"
+        app:layout_constraintTop_toBottomOf="@+id/teaQTY" />
+
+    <Button
+        android:id="@+id/saladBuy"
+        android:layout_width="93dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:onClick="saladBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/saladQTY"
+        app:layout_constraintTop_toBottomOf="@+id/sweetrollBuy" />
+
+    <Button
+        android:id="@+id/teaBuy"
+        android:layout_width="93dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="13dp"
+        android:onClick="teaBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/teaQTY"
+        app:layout_constraintTop_toBottomOf="@+id/cafeLabel3" />
+
+    <Button
+        android:id="@+id/sweetrollBuy"
+        android:layout_width="93dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="14dp"
+        android:onClick="sweetrollBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/sweetrollQTY"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichBuy" />
+
+    <Button
+        android:id="@+id/sandwichBuy"
+        android:layout_width="93dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="17dp"
+        android:onClick="sandwichBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/sandwichQTY"
+        app:layout_constraintTop_toBottomOf="@+id/flatbreadBuy" />
+
+    <Button
+        android:id="@+id/flatbreadBuy"
+        android:layout_width="93dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="17dp"
+        android:onClick="flatbreadBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/flatbreadQTY"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeBuy" />
+
+    <Button
+        android:id="@+id/coffeeBuy"
+        android:layout_width="93dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="17dp"
+        android:onClick="coffeeBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/coffeeQTY"
+        app:layout_constraintTop_toBottomOf="@+id/waterBuy" />
+
+    <Button
+        android:id="@+id/waterBuy"
+        android:layout_width="93dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="17dp"
+        android:onClick="waterBuyFun"
+        android:text="BUY"
+        app:layout_constraintStart_toEndOf="@+id/waterQTY"
+        app:layout_constraintTop_toBottomOf="@+id/teaBuy" />
+
+    <Button
+        android:id="@+id/backToShop"
+        android:layout_width="132dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:onClick="ShopFun"
+        android:text="BACK TO SHOP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saladLabel" />
+
+    <Button
+        android:id="@+id/basketButton"
+        android:layout_width="132dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="56dp"
+        android:onClick="basketFun"
+        android:text="CHECKOUT"
+        app:layout_constraintStart_toEndOf="@+id/backToShop"
+        app:layout_constraintTop_toBottomOf="@+id/saladBuy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

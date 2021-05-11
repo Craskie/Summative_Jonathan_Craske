@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".American">
+
+    <TextView
+        android:id="@+id/txtAmericanTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="16dp"
+        android:text="WORLD MUSEUMS"
+        android:textColor="#070606"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAmericanHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="23dp"
+        android:text="American Museum of Natural History"
+        android:textColor="#090606"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmericanTitle" />
+
+    <ImageView
+        android:id="@+id/americanIMG"
+        android:layout_width="200dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="49dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmericanHeading"
+        app:srcCompat="@drawable/american_nat_history" />
+
+    <TextView
+        android:id="@+id/txtAmerica"
+        android:layout_width="178dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="The American Museum of Natural History is located in New York, USA and houses artifacts dipicting Americas heritage."
+        android:textColor="#090606"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmericanHeading" />
+
+    <TextView
+        android:id="@+id/txtTicketAmerican"
+        android:layout_width="76dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="8dp"
+        android:text="TICKET - £5"
+        android:textColor="#0B0909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmerica" />
+
+    <TextView
+        android:id="@+id/txtTicketQTYAmerican"
+        android:layout_width="126dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginLeft="248dp"
+        android:layout_marginTop="44dp"
+        android:text="TICKET QUANTITY"
+        android:textColor="#0B0909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmerica" />
+
+    <TextView
+        android:id="@+id/txtTimeSlotAmerican"
+        android:layout_width="83dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="44dp"
+        android:text="TIME SLOT"
+        android:textColor="#0B0909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmerica" />
+
+    <Button
+        android:id="@+id/TicketAmerican"
+        android:layout_width="193dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="26dp"
+        android:text="BUY TICKET(S)"
+        app:layout_constraintStart_toEndOf="@+id/AmericanTimeSlots"
+        app:layout_constraintTop_toBottomOf="@+id/AmericanQTY" />
+
+    <Button
+        android:id="@+id/goBackAmerican"
+        android:layout_width="151dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="23dp"
+        android:onClick="MuseumListFun"
+        android:text="GO BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AmericanTimeSlots" />
+
+    <Button
+        android:id="@+id/shopAmerican"
+        android:layout_width="147dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="28dp"
+        android:onClick="ShopFun"
+        android:text="SHOP"
+        app:layout_constraintStart_toEndOf="@+id/goBackAmerican"
+        app:layout_constraintTop_toBottomOf="@+id/TicketAmerican" />
+
+    <EditText
+        android:id="@+id/AmericanQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="191dp"
+        android:layout_marginLeft="191dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTicketQTYAmerican" />
+
+    <RadioGroup
+        android:id="@+id/AmericanTimeSlots"
+        android:layout_width="115dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimeSlotAmerican">
+
+        <RadioButton
+            android:id="@+id/AmericanTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="21dp"
+            android:onClick="checkButton"
+            android:text="9 - 11am" />
+
+        <RadioButton
+            android:id="@+id/AmericanTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="checkButton"
+            android:text="11 - 1pm" />
+
+        <RadioButton
+            android:id="@+id/AmericanTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="checkButton"
+            android:text="1 - 3pm" />
+
+        <RadioButton
+            android:id="@+id/AmericanTime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="checkButton"
+            android:text="3 - 5pm" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

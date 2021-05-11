@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Louvre">
+
+    <TextView
+        android:id="@+id/txtLouvreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="16dp"
+        android:text="WORLD MUSEUMS"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLouvreHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="32dp"
+        android:text="Louvre"
+        android:textColor="#090808"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLouvreTitle" />
+
+    <TextView
+        android:id="@+id/LouvreText"
+        android:layout_width="168dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="64dp"
+        android:text="The Louvre is found in Paris, France and is a musuem housing some of the finest art on the planet. "
+        android:textColor="#050505"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/louvreImg"
+        app:layout_constraintTop_toBottomOf="@+id/txtLouvreHeading" />
+
+    <Button
+        android:id="@+id/shopLouvre"
+        android:layout_width="147dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="33dp"
+        android:onClick="ShopFun"
+        android:text="SHOP"
+        app:layout_constraintStart_toEndOf="@+id/GoBackLouvre"
+        app:layout_constraintTop_toBottomOf="@+id/TicketLouvre" />
+
+    <Button
+        android:id="@+id/GoBackLouvre"
+        android:layout_width="129dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="5dp"
+        android:onClick="MuseumListFun"
+        android:text="GO BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LovreTimeSlots" />
+
+    <TextView
+        android:id="@+id/txtTicket"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginLeft="268dp"
+        android:layout_marginTop="288dp"
+        android:text="TICKET - £10"
+        android:textColor="#0C0A0A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLouvreTitle" />
+
+    <TextView
+        android:id="@+id/txtTimeSlot"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="344dp"
+        android:text="TIME SLOT"
+        android:textColor="#0C0A0A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLouvreTitle" />
+
+    <TextView
+        android:id="@+id/txtTicketQTY"
+        android:layout_width="127dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="344dp"
+        android:text="TICKET QUANTITY"
+        android:textColor="#0C0A0A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLouvreTitle" />
+
+    <Button
+        android:id="@+id/TicketLouvre"
+        android:layout_width="169dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="24dp"
+        android:onClick="TicketFun"
+        android:text="Buy Ticket(s)"
+        app:layout_constraintStart_toEndOf="@+id/LovreTimeSlots"
+        app:layout_constraintTop_toBottomOf="@+id/LouvreQTY" />
+
+    <ImageView
+        android:id="@+id/louvreImg"
+        android:layout_width="207dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLouvreHeading"
+        app:srcCompat="@drawable/louvre" />
+
+    <EditText
+        android:id="@+id/LouvreQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/LovreTimeSlots"
+        app:layout_constraintTop_toBottomOf="@+id/txtTicketQTY" />
+
+    <RadioGroup
+        android:id="@+id/LovreTimeSlots"
+        android:layout_width="114dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimeSlot">
+
+        <RadioButton
+            android:id="@+id/LouvreTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:onClick="checkButton"
+            android:text="9 - 11am" />
+
+        <RadioButton
+            android:id="@+id/LouvreTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="checkButton"
+            android:text="11 - 1pm" />
+
+        <RadioButton
+            android:id="@+id/LouvreTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="checkButton"
+            android:text="1 - 3pm" />
+
+        <RadioButton
+            android:id="@+id/LouvreTime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="checkButton"
+            android:text="3 - 5pm" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
