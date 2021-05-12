@@ -20,6 +20,7 @@ public class Shop extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
+
         EditText shirtqty = findViewById(R.id.shirtQTY);
         Button addShirtBttn = findViewById(R.id.shirtBuy);
 

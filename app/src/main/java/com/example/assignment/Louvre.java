@@ -12,7 +12,8 @@ import android.widget.RadioGroup;
 
 public class Louvre extends AppCompatActivity {
 
-    ticket LouvreTicket;
+
+    public static ticket LouvreTicket;
     EditText ticketQTY;
     RadioButton radioButton;
     RadioGroup timeSlot;
